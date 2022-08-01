@@ -1,0 +1,45 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+   int math, sci, eng, fil, pe;
+   int x;
+
+    printf("Enter math grade: ");
+    scanf("%d", &math);
+
+    printf("Enter science grade: ");
+    scanf("%d", &sci);
+
+    printf("Enter english grade: ");
+    scanf("%d", &eng);
+
+    printf("Enter filipino grade: ");
+    scanf("%d", &fil);
+
+    printf("Enter P.E grade: ");
+    scanf("%d", &pe);
+
+    printf("Your average grade is: %d", average(addnum(math,  sci, eng, fil, pe)));
+
+
+
+
+    return 0;
+}
+
+int addnum (int math, int sci, int eng, int fil, int pe) {
+        int sum;
+
+        sum = math + sci + eng + fil + pe;
+
+        return sum;
+}
+int average (int a){
+        int ave;
+
+        ave = a / 5;
+
+        return ave;
+
+}
